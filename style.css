@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "russia";
+  src: url(Kremlin.ttf);
+}
+
+:root {
+  --color1: #e5e6e4;
+  --color2: #a6a2a2;
+  --color3: #fbfbf2;
+  --color4: #847577;
+  --color5: #cfd2cd;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "russia";
+}
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color1);
+}
+
+img {
+  max-height: 100%;
+  width: auto;
+}
+
+.content {
+  display: flex;
+  flex: auto;
+  align-items: center;
+}
+
+.form-container {
+  flex: 1 1 80%;
+  border-radius: 8px;
+  margin: 2px;
+  padding: 0px 50px;
+  height: 50vh;
+}
+
+form {
+  margin: 40px 0px;
+  width: 80%;
+}
+
+fieldset {
+  border: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+input {
+  width: clamp(5em, 15em, 25em);
+}
+
+.img {
+  background-image: url(hoodlum.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+  flex: 1 1 900px;
+}
+
+.logo {
+  margin-top: 20vh;
+  background-color: rgba(102, 102, 102, 0.493);
+  color: var(--color3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  gap: 50px;
+
+  img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+.logo-text {
+  overflow: hidden;
+}
+
+input {
+  appearance: none;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 100%;
+  box-shadow: none;
+  border: none;
+  padding: 2px;
+}
+
+input:valid {
+  background-color: rgba(113, 207, 118, 0.568);
+}
+
+input:user-invalid {
+  background-color: rgba(233, 146, 146, 0.767);
+}
+.text-field > * {
+  display: block;
+}
+
+button {
+  border-radius: 4px;
+  outline: none;
+  border-color: var(--color4);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration-line: underline;
+}
+
+.requiredmsg {
+  visibility: hidden;
+  color: red;
+  font-size: 10px;
+}
+
+input:user-invalid[required] + .requiredmsg {
+  visibility: visible;
+}
+
+.subtext {
+  font-size: 0.7rem;
+}
+
+/* reset stufgf ignore */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}

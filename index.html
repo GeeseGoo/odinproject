@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="img">
+      <div class="logo">
+        <img src="odin-lined.png" />
+        <h1 class="logo-text">gooner</h1>
+      </div>
+    </div>
+    <div class="content">
+      <div class="form-container">
+        <h1>Welcome to Fiona's Gooning Dungeon. Sign up now.</h1>
+        <h2>You <em>know</em> you want to...</h2>
+        <form>
+          <fieldset>
+            <legend>Goon me up.</legend>
+            <div class="flex-container">
+              <div class="column">
+                <div class="text-field">
+                  <label for="first-name" aria-required>First Name *</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    required
+                  /><span class="requiredmsg">* This field is required</span>
+                </div>
+                <div class="text-field">
+                  <label for="email" aria-required>Email *</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="email"
+                    required
+                  /><span class="requiredmsg">* This field is required</span>
+                </div>
+                <div class="text-field">
+                  <label for="password" aria-required>Password *</label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="password"
+                    name="password"
+                    required
+                    minlength="6"
+                    maxlength="25"
+                  /><span class="requiredmsg">* This field is required</span>
+                </div>
+              </div>
+              <div class="column">
+                <div class="text-field">
+                  <label for="last-name" aria-required>Last Name *</label>
+                  <input type="text" name="last-name" id="last-name" required />
+                  <span class="requiredmsg">* This field is required</span>
+                </div>
+
+                <div class="text-field">
+                  <label for="phone">Phone Number</label
+                  ><input type="tel" name="phone" id="phone" />
+                </div>
+
+                <div class="text-field">
+                  <label for="confirm" aria-required>Confirm Password *</label
+                  ><input
+                    type="password"
+                    name="confirm"
+                    id="confirm"
+                    required
+                    minlength="6"
+                    maxlength="25"
+                  /><span class="requiredmsg">* This field is required</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit">START GOONING</button>
+            <p class="subtext">
+              Already a registered
+              <a href="https://www.youtube.com/watch?v=c4KNd0Yv6d0">gooner?</a>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
